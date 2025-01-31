@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width , initial-scale = 1.0">
+        <link rel="stylesheet" href = "styles.css">
+        <script src = "cicd.js"></script>
+        <title>Task Scheduler</title>
+    </head>
+
+    <body>
+        <h1>Make your schedule Here!</h1>
+        <h2> Create your New Task</h2>
+        <div id = "Task_Details">
+            <label for = "Task_name">Task</label><br>
+            <input type = "text" id = "Task_name" placeholder="Enter the Task Name"><br>
+            <label for = "Task_desc">Task Description</label><br>
+            <input type = "text" id = "Task_desc" placeholder="Enter the Task Description"><br>
+            <label for = "Task_Assignee">  Task Assignee</label><br>
+            <input type = "text" id = "Task_Assignee" placeholder="Enter the  Task Assignee"><br>
+        <select id = "Task_Progress">
+            <option value = "pending" > Pending</option>
+            <option value = "in-progress" > In Progress</option>
+            <option value = "Completed">Completed</option>
+        </select>
+        <br>
+        <button onclick="addData()" >Add</button>
+    </div>
+
+        <table id = "outputTable">
+            <tr>
+                <th>Task</th>
+                <th>Task Description</th>
+                <th>Task Assignee</th>
+                <th>Task Progress</th>
+            </tr>
+        </table>
+
+    </body>
+</html>
